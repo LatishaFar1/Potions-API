@@ -4,14 +4,15 @@ require './config/environment'
 #   raise 'Migrations are pending. Run `rake db:migrate` to resolve the issue.'
 # end
 
-run ApplicationController
-run PotionsController
+
 
 use Rack::Cors do 
     allow do
 
-    origins "*"
-    resource "*", headers: :any, methods: [:get, :post, :delete, :put, :patch, :options, :head]
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :delete, :put, :patch, :options, :head]
+      end
+    end
 
-    end 
-end 
+run ApplicationController
+run PotionsController

@@ -11,7 +11,7 @@ gem 'shotgun'
 gem 'pry'
 gem 'bcrypt'
 gem 'tux'
-gem "rack-cors"
+gem 'rack-cors'
 
 group :test do
   gem 'rspec'

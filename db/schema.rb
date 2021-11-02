@@ -14,8 +14,10 @@ ActiveRecord::Schema.define(version: 2021_10_31_014653) do
 
   create_table "potions", force: :cascade do |t|
     t.string "name"
-    t.integer "cost"
+    t.string "desc"
+    t.integer "price"
     t.integer "type_id"
+    t.string "img_url"
   end
 
   create_table "types", force: :cascade do |t|
