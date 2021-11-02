@@ -12,6 +12,7 @@ gem 'pry'
 gem 'bcrypt'
 gem 'tux'
 gem 'rack-cors'
+gem "rack-contrib", "~> 2.3"
 
 group :test do
   gem 'rspec'
