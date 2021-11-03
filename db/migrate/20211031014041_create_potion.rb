@@ -4,8 +4,8 @@ class CreatePotion < ActiveRecord::Migration[6.1]
       c.string :name
       c.string :desc
       c.integer :price
-      c.integer :type_id
       c.string :img_url
+      c.integer :affect_id
     end 
   end
 end

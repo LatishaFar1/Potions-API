@@ -1,8 +1,6 @@
 class Potion < ActiveRecord::Base
 
-    belongs_to :type
+    belongs_to :affect
     
-def potion_description
-    self.name + "" + self.cost
-end 
+ 
 end 
